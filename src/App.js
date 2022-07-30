@@ -1,9 +1,13 @@
-import './App.css';
+import "./App.css";
+import Navbar from './components/Navbar';
+import Form from "./components/Form";
+//import Button from 'react-bootstrap/Button';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Hello, World!</h1>
+    <div className="App">
+      <Navbar/>
+      <Form/>
     </div>
   );
 }

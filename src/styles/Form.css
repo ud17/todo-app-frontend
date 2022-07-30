@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: start;
+    padding: 15px;
+}
+
+/* common styling */
+.margin {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.border {
+    border-radius: 1px;
+    border: 3px solid #625f5f;
+    border-radius: 35px;
+}
+
+/************************** Components Styling *************************************/
+
+/* Button Styling */
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 95px;
+    height: 55px;
+    color: #625f5f;
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+    background-color: #625f5f;
+    color: #e7e5e5;
+}
+
+/* Input Styling */
+.ipt {
+    display: flex;
+    padding: 5px;
+    width: 200px;
+    height: 55px;
+    color: #625f5f;
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
