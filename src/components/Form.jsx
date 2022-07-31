@@ -1,15 +1,15 @@
 import React from "react";
 import "../styles/Form.css";
 
-const Button = () => {
+const Form = () => {
     return (
         <div>
             <form className="container">
-                <input type="input" className="ipt margin border"/>
-                <input type="button" className="btn margin border" value="Add" />
+                <input type="input" className="input margin border" placeholder="Title..."/>
+                <input type="button" className="button margin border" value="Add" />
             </form>            
         </div>
-    )
+    );
 }
 
-export default Button;
+export default Form;

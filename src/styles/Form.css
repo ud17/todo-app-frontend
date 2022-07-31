@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 15px;
 }
 
@@ -19,9 +19,7 @@
 /************************** Components Styling *************************************/
 
 /* Button Styling */
-.btn {
-    display: flex;
-    justify-content: center;
+.button {
     width: 95px;
     height: 55px;
     color: #625f5f;
@@ -29,15 +27,15 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.btn:hover {
+.button:hover {
     background-color: #625f5f;
     color: #e7e5e5;
 }
 
 /* Input Styling */
-.ipt {
+.input {
     display: flex;
-    padding: 5px;
+    padding: 9px;
     width: 200px;
     height: 55px;
     color: #625f5f;
