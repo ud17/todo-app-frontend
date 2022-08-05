@@ -1,13 +1,15 @@
-.container {
+.div-container {
     display: flex;
-    justify-content: flex-start;
-    padding: 15px;
+}
+
+.form-container {
+    display: flex;
+    margin: 15px;
 }
 
 /* common styling */
 .margin {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 5px;
 }
 
 .border {
@@ -20,7 +22,7 @@
 
 /* Button Styling */
 .button {
-    width: 95px;
+    width: 105px;
     height: 55px;
     color: #625f5f;
     background-color: transparent;
@@ -34,10 +36,9 @@
 
 /* Input Styling */
 .input {
-    display: flex;
     padding: 9px;
-    width: 200px;
     height: 55px;
+    width: 250px;
     color: #625f5f;
     background-color: transparent;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
