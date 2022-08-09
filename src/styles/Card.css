@@ -1,9 +1,15 @@
 .card {
     display: flex;
-    height: auto;
+    height: 25px;
     width: fit-content;
     margin: 25px;
     box-shadow: 0 1px 3px 0 #4e4e4e;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5px;
 }
 
 .box {
@@ -12,5 +18,7 @@
 }
 
 .text {
+    display: flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px 5px;
 }

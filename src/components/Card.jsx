@@ -2,12 +2,14 @@ import React from "react";
 import "../styles/Card.css";
 
 const Card = (props) => {
+    
     return (
         <div className="card">
             <div className="box">
-                <img src="/images/delete" alt="delete"/>
-                <span className="text">Todo Task will go here</span>
-            </div>            
+                <span className="text">{props.task}</span>
+                <img src="/images/edit.png" className="icon" alt="delete"/>
+                <img src="/images/delete.png" className="icon" alt="eidt"/>                
+            </div> 
         </div>
     );
 }
