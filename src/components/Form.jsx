@@ -1,55 +1,39 @@
-import React from "react";
-import "../styles/Form.css";
-import Card from "./Card";
+import React from 'react';
+import { useState } from 'react';
 
-// import react hooks
-import { useState, useRef } from "react";
+function Form(props) {
 
-const Form = () => {
+    const [input, setInput] = useState('');
 
-    const [text, setText] = useState([]);
-    const [input, setInput] = useState("");
-    const [error, setError] = useState("");
-
-    const inputRef = useRef(null);
-
-    const addTodo = () => {
-        if(input.length < 4) {
-            setError("Task title should be 4-30 characters long.");
-            return;
-        }
-        text.push(input);
-        setText(text);
-        setInput("");
-        onSubmit();
+    const handleChange = (e) => {
+        setInput(e.target.value);
     }
 
-    const setValue = (event) => {
-        setInput(event.target.value);
-        setError("");
-    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-    const onSubmit = () => {
-        inputRef.current.value = "";
-        inputRef.current.blur();
+        props.onSubmit({
+            id: Math.floor(Math.random() * 10000),
+            text: input
+        });
+        setInput('');
     }
 
     return (
-        <div>
-            <form className="form-container">
-                <input type="input" className="input margin border" onChange={setValue} ref={inputRef} placeholder="Todo Task" maxLength={30} minLength={4}/>
-                <input type="button" className="button margin border" value="Add Todo" onClick={addTodo} />
-            </form>
-            <label className="error">{error}</label>
-            <div className="div-container">
-                {
-                    text.map((item) => (
-                        <Card task={item}/>
-                    ))
-                }
-            </div>            
-        </div>
-    );
+        <form className='todo-form' onSubmit={handleSubmit}>
+            <input 
+                type='text' 
+                placeholder='Add a todo'
+                value={input}
+                name='text'
+                className='todo-input'
+                onChange={handleChange}
+            />
+            <button className='todo-button'>
+                Add Todo
+            </button>
+        </form>
+    )
 }
 
-export default Form;
+export default Form

@@ -1,24 +1,59 @@
+/* Main Container */
 .card {
     display: flex;
-    height: 25px;
+    height: fit-content;
     width: fit-content;
     margin: 25px;
     box-shadow: 0 1px 3px 0 #4e4e4e;
 }
 
-.icon {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 5px;
-}
-
+/* Card Text Holder */
 .box {
     display: flex;
+    justify-content: space-between;
     margin: 15px;
 }
 
+/* Icon Container */
+.icon-container {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    justify-content: right;
+    margin: 0 5px;
+}
+
+/* Text Styling */
 .text {
     display: flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0px 5px;
+}
+
+/* Update Dialog */
+.update-box {
+    display: flex;
+    margin: 15px;
+}
+
+.input {
+    padding: 9px;
+    height: 55px;
+    width: 250px;
+    color: #625f5f;
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Common Styling */
+.margin {
+    margin: 5px;
+}
+
+.border {
+    border-radius: 1px;
+    border: 3px solid #625f5f;
+    border-radius: 35px;
 }

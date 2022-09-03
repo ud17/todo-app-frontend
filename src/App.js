@@ -1,12 +1,11 @@
 import "./App.css";
-import Navbar from './components/Navbar';
 import Form from "./components/Form";
+import List from "./components/List";
 
 const App = () => {
   return (
-    <div className="App">
-      <Navbar/>
-      <Form/>
+    <div className='todo-app'>
+      <List />
     </div>
   );
 }
